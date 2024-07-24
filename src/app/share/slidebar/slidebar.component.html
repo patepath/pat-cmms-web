@@ -1,30 +1,26 @@
 <div id="sidebar" class="d-flex flex-shrink-0">
     <h1 class="visually-hidden">CMMS</h1>
 
-    <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;" >
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 100%;" >
 
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
             <img src="../assets/img/logo.png" class="me-2" width="64" height="64" alt="">
             <span class="fs-4">CMMS</span>
         </a>
 
-        <select class="mt-2" [(ngModel)]="jobType" (ngModelChange)="changeJobType()">
+        <select class="mt-2" [(ngModel)]="jobType" (ngModelChange)="changeJobType()" style="width: 100%;">
             <option [ngValue]="1">งานซ่อม</option>
             <option [ngValue]="2">งาน PM.</option>
         </select>
 
-        <ul id="nav-menu" class="nav nav-pills flex-column mb-auto mt-2" *ngIf="user.role == 1">
+        <ul id="nav-menu" class="nav nav-pills flex-column mb-auto mt-2" *ngIf="user.role == 1" style="width: 100%">
             <li class="nav-item">
                 <a [routerLink]="['admin/new-issue']" class="nav-link active text-white" aria-current="page">
                     <em class="fa fa-volume-control-phone me-2"></em> รับเรื่อง
                 </a>
             </li>
 
-            <li>
-                <hr>
-            </li>
-
-            <li>
+            <li class="mt-2">
                 <a [routerLink]="['report/admin-today']" class="nav-link text-white">
                     <em class="fa fa-clock-o me-2"></em>
                     งานใหม่วันนี้
