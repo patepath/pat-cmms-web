@@ -141,14 +141,14 @@
             </li>
         </ul>
 
-        <ul id="nav-menu" class="nav nav-pills flex-column mb-auto mt-2" *ngIf="user.role == 2">
+        <ul id="nav-menu" class="nav nav-pills flex-column mb-auto mt-2" style="width: 100%" *ngIf="user.role == 2">
             <li class="nav-item">
                 <a [routerLink]="['admin/new-issue']" class="nav-link active text-white" aria-current="page">
                     <em class="fa fa-volume-control-phone me-2"></em> รับเรื่องซ่อม
                 </a>
             </li>
 
-            <li>
+            <li class="mt-2">
                 <a [routerLink]="['tech/today-issue']" class="nav-link text-white">
                     <em class="fa fa-clock-o me-2"></em>
                     งานใหม่วันนี้
@@ -175,6 +175,46 @@
                     งานที่เสร็จแล้ว
                 </a>
             </li>
+
+            <li>
+                <hr>
+            </li>
+
+            <li>
+                <a [routerLink]="['report/report1']" class="nav-link text-white">
+                    <em class="fa fa-file-text-o me-2" width="16" height="16"></em>
+                    รายงานแยกตามประเภท
+                </a>
+            </li>
+
+            <li>
+                <a [routerLink]="['report/report2']" class="nav-link text-white">
+                    <em class="fa fa-file-text-o me-2" width="16" height="16"></em>
+                    รายงานแยกตามหน่วยงาน
+                </a>
+            </li>
+
+            <li>
+                <a [routerLink]="['report/report3']" class="nav-link text-white">
+                    <em class="fa fa-file-text-o me-2" width="16" height="16"></em>
+                    รายงานแยกตามหมวด
+                </a>
+            </li>
+
+            <li>
+                <a [routerLink]="['report/report4']" class="nav-link text-white">
+                    <em class="fa fa-file-text-o me-2" width="16" height="16"></em>
+                    รายงานแยกตามสถานะ
+                </a>
+            </li>
+
+            <li>
+                <a [routerLink]="['report/report5']" class="nav-link text-white">
+                    <em class="fa fa-file-text-o me-2" width="16" height="16"></em>
+                    รายงานแยกความพึงพอใจ
+                </a>
+            </li>
+
         </ul>
 
         <hr>
