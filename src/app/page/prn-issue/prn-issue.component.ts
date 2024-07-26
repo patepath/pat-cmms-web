@@ -51,31 +51,31 @@ export class PrnIssueComponent implements OnInit {
 
   get_groupY(): string {
     switch(this.group) {
-      case '001':
+      case '1':
         return '5.7';
 
-      case '002':
-        return '6.2';
-
-      case '003':
-        return '6.7';
-
-      case '004':
-        return '7.1';
-
-      case '005':
+      case '2':
         return '7.6';
 
-      case '006':
-        return '8.1';
-
-      case '007':
-        return '8.55';
-
-      case '008':
+      case '3':
         return '9.0';
 
-      case '009':
+      case '4':
+        return '8.1';
+
+      case '5':
+        return '7.1';
+
+      case '6':
+        return '8.1';
+
+      case '7':
+        return '8.55';
+
+      case '8':
+        return '9.0';
+
+      case '9':
         return '9.5';
     }
 
